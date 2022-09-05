@@ -1,6 +1,29 @@
 :root {
   --text-primary: #666;
+
+  --color-blue-400: #53b1fd;
+  --color-blue-500: #68b4ff;
+  --color-blue-800: #1849a9;
+
+  --color-grey-100: #f2f4f7;
+  --color-grey-200: #e4e7ec;
+  --color-grey-300: #d0d5dd;
+  --color-grey-400: #98a2b3;
+  --color-grey-500: #667085;
+  --color-grey-600: #475467;
+  --color-grey-700: #344054;
+  --color-grey-800: #1d2939;
+  --color-grey-900: #101828;
+
+  --color-success: #00ab55;
+  --color-danger: #f04438;
+  --color-white: #ffffff;
+
+  --color-background: #f5f5f5;
+  --color-footer-background: #222529;
   --font-primary: "Poppins", sans-serif;
+
+  --box-shadow-1: 0px 0px 7px rgba(16, 24, 40, 0.05);
 }
 
 /* ========== Reset CSS ========== */
@@ -217,7 +240,7 @@ nav ul li a {
 }
 /* banner area end */
 
-/* service-area start */
+/* ===== service-area start ===== */
 .services-area {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -258,19 +281,20 @@ nav ul li a {
   color: #666;
   font-size: 14px;
 }
-/* service-area end */
+/* ===== service-area end ===== */
 
-/* our categories area start */
+/* ===== our categories area start ===== */
 .categories {
   margin-bottom: 60px;
 }
 
 .category-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
 .category-item {
-  width: 25%;
   overflow: hidden;
   border-radius: 8px;
   position: relative;
@@ -290,7 +314,7 @@ nav ul li a {
   left: 10px;
   right: 10px;
 }
-/* our categories area End */
+/* ===== our categories area End ===== */
 
 /* Best Selling Products area start */
 .best-selling-products {
@@ -298,8 +322,13 @@ nav ul li a {
   flex-wrap: wrap;
 }
 
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .single-product {
-  width: 24%;
 }
 
 .discount {
@@ -369,6 +398,7 @@ nav ul li a {
   text-align: center;
   color: #999;
   margin-top: 5px;
+  padding: 10px;
 }
 
 .product-content > p {
@@ -449,8 +479,15 @@ nav ul li a {
   margin: 50px 0;
 }
 
+.article-list {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  /* grid-template-columns: repeat(auto-fit, 30%); */
+  gap: 20px;
+}
+
 .single-article {
-  width: 32%;
   background-color: #fff;
   box-shadow: 0 5px 30px 3px rgb(0 0 0 / 5%);
   border-radius: 5px;
@@ -527,8 +564,18 @@ footer {
   padding: 30px 0;
 }
 
+.footer-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-area p {
+  text-align: center;
+}
+
 .social-icons {
   display: flex;
+  justify-content: end;
 }
 
 .social-icons a {
