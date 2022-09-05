@@ -5,3 +5,88 @@
   transition: all 0.3s ease-in-out 0.1s;
   box-shadow: 0px 10px 50px 0px rgb(26 46 85 / 10%);
 }
+/* ======= Responsive Start =======*/
+
+/* 'lg' applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+  .service-list {
+    flex-wrap: wrap;
+  }
+
+  .category-item .single-product .single-article {
+    width: 48.5%;
+  }
+}
+
+/* 'md' applies to small device (landscape phones, loess then 768px) */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .banner-content {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .service-item:nth-child(even) {
+    border-right: none;
+  }
+
+  .summer-sale h2 {
+    font-size: 35px;
+  }
+
+  /* footer  */
+  .footer-area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .footer-area img {
+    margin: auto;
+  }
+
+  .footer-area > .social-icons {
+    margin: auto;
+  }
+}
+
+/* sm applies to x-small devices (portrait Mobile phones, less than 576px)  */
+@media (max-width: 576px) {
+  header nav {
+    display: none;
+  }
+
+  .banner-content h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .banner-area {
+    background-image: cover;
+  }
+
+  .service-item {
+    border-right: none;
+  }
+
+  /* footer */
+  .footer-area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .footer-area img {
+    margin: auto;
+  }
+
+  .footer-area > .social-icons {
+    margin: auto;
+  }
+}
