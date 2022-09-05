@@ -316,7 +316,7 @@ nav ul li a {
 }
 /* ===== our categories area End ===== */
 
-/* Best Selling Products area start */
+/* ===== Best Selling Products area start ===== */
 .best-selling-products {
   margin-bottom: 60px;
   flex-wrap: wrap;
@@ -438,9 +438,9 @@ nav ul li a {
   font-size: 12px;
   font-weight: 400;
 }
-/* Best Selling Products area end */
-/* ================================================ */
-/* summer season sale start */
+/* ===== Best Selling Products area end ===== */
+
+/* ===== summer season sale start ===== */
 .summer-sale {
   background-image: url(../images/parallax.jpg);
   color: #fff;
@@ -472,9 +472,9 @@ nav ul li a {
 .summer-sale button {
   margin-top: 30px;
 }
-/* Summer season sale end  */
-/* ================================================ */
-/*  Featured Articles start */
+/* ===== Summer season sale end =====  */
+
+/*  ===== Featured Articles start ===== */
 .featured-articles {
   margin: 50px 0;
 }
@@ -557,8 +557,9 @@ nav ul li a {
   margin-top: 20px;
   display: block;
 }
+/*  ===== Featured Articles end ===== */
 
-/* Footer start  */
+/* ===== Footer start =====  */
 footer {
   background-color: #222222;
   padding: 30px 0;
@@ -582,7 +583,7 @@ footer {
   color: #999999;
   padding: 0 10px;
 }
-/*  Footer end  */
+/*  ======= Footer end ======= */
 
 /* ======= Responsive Start =======*/
 
